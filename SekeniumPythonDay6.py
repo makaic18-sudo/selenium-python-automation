@@ -13,3 +13,7 @@ input_field.send_keys("Khan")
 alert_example_text = driver.find_element(By.XPATH, "//legend[text() = 'Switch To Alert Example']")
 alert_example_text = alert_example_text.text
 print(alert_example_text)
+check_boxes = driver.find_element(By.XPATH, "//input[starts-with(@name,'checkBoxOption1')]")
+print(check_boxes)
+print(len(check_boxes))
+for check_box in check_boxes:
